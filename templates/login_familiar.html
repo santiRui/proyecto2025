@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inicio de Sesión - Familiar</title>
+  <link rel="icon" type="image/x-icon" href="../static/img/logotec.ico">
+  <link rel="stylesheet" href="../static/css/login.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <meta name="description" content="Inicio de sesión para familiares - Escuela de Educación Técnica N°3139">
+</head>
+<body>
+  <div class="body-corner-logo">
+    <img src="../static/img/logotec.webp" alt="Logo colegio">
+  </div>
+  <div class="page-container">
+    <div class="mobile-text-container">
+      <p class="login-info">Usted va a iniciar sesión como</p>
+      <h2 class="login-role">Familiar</h2>
+    </div>
+
+    <div class="login-panel">
+      <div class="header-container">
+        <div class="logo-container">
+          <div class="logo">
+            <img src="../static/img/logotec.webp" alt="Logo colegio">
+          </div>
+          <h1 class="title">Iniciar sesión</h1>
+        </div>
+
+        <p class="subtitle">
+          Ingrese sus datos personales para usar todas las funciones del sitio
+        </p>
+      </div>
+
+      <div class="form-container">
+        <form>
+          <div class="form-group">
+            <span class="input-icon">
+              <i class="fa-solid fa-id-card" style="color: #8bc34a;"></i>
+            </span>
+            <input type="text" id="dni" class="form-input with-icon" placeholder="Ingrese su DNI">
+          </div>
+
+          <div class="form-group password-container">
+            <span class="input-icon">
+              <i class="fa-solid fa-lock" style="color: #8bc34a;"></i>
+            </span>
+            <input type="password" id="password" class="form-input with-icon" placeholder="Ingrese su contraseña">
+            <button type="button" id="togglePassword" class="toggle-password">
+              <i class="fa-solid fa-eye"></i>
+            </button>
+          </div>
+
+          <div class="forgot-password">
+            <a href="/templates/contraseña_olvidada.html">¿Olvidaste tu contraseña?</a>
+          </div>
+
+          <button type="button" class="btn btn-primary">Iniciar Sesión</button>
+
+          <a href="/templates/registro_familiar.html"><button type="button" class="btn btn-secondary">Registrarse</button></a>
+        </form>
+      </div>
+    </div>
+
+    <div class="image-panel">
+      <div class="image-container">
+        <img 
+          src="/static/img/Güemes.webp"
+          alt="Monumento histórico" 
+          class="full-image">
+        
+        <div class="text-container">
+          <p class="login-info">Usted va a iniciar sesión como</p>
+          <h2 class="login-role">Familiar</h2>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="/static/js/forms.js"></script>
+</body>
+</html>
+
